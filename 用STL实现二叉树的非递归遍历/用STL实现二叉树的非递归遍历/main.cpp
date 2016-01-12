@@ -66,13 +66,13 @@ TreeNode* getLeftChild(stack<TreeNode*> &treeStack,TreeNode* node)
 	}
 	while (lebal)
 	{
-		treeStack.push(temp);
 		if ( !temp->leftChild)
 		{
 			lebal = false;
 		}
 		else
 		{
+			treeStack.push(temp);
 			temp = temp->leftChild;
 		}
 	}
@@ -102,7 +102,6 @@ void readTree( TreeNode*node)
 		}
 
 	}
-
 
 }
 
