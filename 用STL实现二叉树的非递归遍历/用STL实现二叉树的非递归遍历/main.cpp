@@ -21,6 +21,7 @@ typedef struct TreeNode
 */
 
 
+// 递归加栈实现
 void readTree(stack<TreeNode*> *treeStack, TreeNode* node)
 {
 	if (treeStack == NULL)
@@ -52,6 +53,59 @@ void readTree(stack<TreeNode*> *treeStack, TreeNode* node)
 		}
 	}
 }
+
+//非递归加栈实现
+
+TreeNode* getLeftChild(stack<TreeNode*> &treeStack,TreeNode* node)
+{
+	bool lebal = true;
+	TreeNode* temp = node;
+	if (!(temp->leftChild))
+	{
+		lebal = false;
+	}
+	while (lebal)
+	{
+		treeStack.push(temp);
+		if ( !temp->leftChild)
+		{
+			lebal = false;
+		}
+		else
+		{
+			temp = temp->leftChild;
+		}
+	}
+	return temp;
+}
+
+void readTree( TreeNode*node)
+{
+	stack<TreeNode*> treeStack;
+	TreeNode *left = NULL;
+	left = getLeftChild(treeStack, node);
+	while (left)
+	{
+		cout << left->data << endl;
+		if (left->rightChild != NULL)
+		{
+			left = getLeftChild(treeStack, left->rightChild);
+		}
+		else if (!treeStack.empty())
+		{
+			left = treeStack.top();
+			treeStack.pop();
+		}
+		else
+		{
+			left = NULL;
+		}
+
+	}
+
+
+}
+
 // 本树的结构见资源图片
 int main(int args,char*argus[])
 {
@@ -80,8 +134,10 @@ int main(int args,char*argus[])
 
 	stack<TreeNode*> treeStack;
 
-	readTree(&treeStack, &t1);
+	//readTree(&treeStack, &t1);
 
+
+	readTree(&t1);
 	cout<<"Hello World"<<endl;
 	system("pause");
 	return 0;
