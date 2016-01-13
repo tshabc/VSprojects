@@ -64,7 +64,7 @@ void test()
 */
 /*
 	child *c = new child;
-	delete c;
+	delete c;  
 */
 
 	base *b = new base;
