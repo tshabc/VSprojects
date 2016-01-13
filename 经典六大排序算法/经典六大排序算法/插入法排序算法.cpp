@@ -26,13 +26,13 @@ void insertSort(int array[],int length)
 			array[j+1] = array[j];
 		}
 		array[j+1] = tempvalue; //注意循环完成之后，j 多减了 1
-		cout << "/*/*/*/*/*/******************************//"<< endl;
-		coutArray(array, length);
+		//cout << "/*/*/*/*/*/******************************//"<< endl;
+		//coutArray(array, length);
 	}
 
 }
 
-int main(int args,char*argus[])
+int main02(int args,char*argus[])
 {
 	int array[] = { 32, 6, 1, 5, 87, 6, 96, 54, 3, 5, 45, 6 };
 	int length = sizeof(array) / sizeof(array[0]);
