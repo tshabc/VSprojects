@@ -1,18 +1,26 @@
-﻿生成启动时间为 2016/1/8 17:34:45。
+﻿生成启动时间为 2016/1/15 16:26:29。
      1>项目“C:\Users\HuaLI\documents\visual studio 2013\Projects\Project1\Project1\Project1.vcxproj”在节点 2 上(Build 个目标)。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(381,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Project1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stlMap.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp stlAlgorithm.cpp stlList.cpp stlMap.cpp stlSet.cpp "stl相关.cpp"
          stlMap.cpp
+         正在生成代码...
+         正在跳过...(未检测到相关更改)
+         stl相关.cpp
+         stlSet.cpp
+         stlList.cpp
+         stlAlgorithm.cpp
+         main.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\HuaLI\documents\visual studio 2013\Projects\Project1\Debug\Project1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\HuaLI\documents\visual studio 2013\Projects\Project1\Debug\Project1.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\HuaLI\documents\visual studio 2013\Projects\Project1\Debug\Project1.lib" /MACHINE:X86 Debug\main.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\HuaLI\documents\visual studio 2013\Projects\Project1\Debug\stl相关.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\HuaLI\documents\visual studio 2013\Projects\Project1\Debug\stl相关.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\HuaLI\documents\visual studio 2013\Projects\Project1\Debug\stl相关.lib" /MACHINE:X86 Debug\main.obj
          Debug\stlAlgorithm.obj
          Debug\stlList.obj
          Debug\stlMap.obj
          Debug\stlSet.obj
          "Debug\stl相关.obj"
-         Project1.vcxproj -> C:\Users\HuaLI\documents\visual studio 2013\Projects\Project1\Debug\Project1.exe
+         Project1.vcxproj -> C:\Users\HuaLI\documents\visual studio 2013\Projects\Project1\Debug\stl相关.exe
      1>已完成生成项目“C:\Users\HuaLI\documents\visual studio 2013\Projects\Project1\Project1\Project1.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:01.23
+已用时间 00:00:00.79
