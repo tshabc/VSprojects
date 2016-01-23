@@ -80,6 +80,7 @@
   <ItemGroup>
     <ClCompile Include="冒泡排序算法.cpp" />
     <ClCompile Include="希尔排序算法.cpp" />
+    <ClCompile Include="归并排序算法.cpp" />
     <ClCompile Include="快速排序算法.cpp" />
     <ClCompile Include="插入法排序算法.cpp" />
     <ClCompile Include="选择排序法.cpp" />

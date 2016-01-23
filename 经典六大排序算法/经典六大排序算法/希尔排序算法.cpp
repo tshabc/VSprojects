@@ -40,7 +40,7 @@ void xierSort(int *array, int length)
 
 }
 
-int main(int args,char*argus[])
+int main05(int args,char*argus[])
 {
 
 	int array[] = { 32, 6, 1, 5, 87, 6, 96, 54, 3, 5, 45, 6 };

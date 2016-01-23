@@ -30,6 +30,9 @@
     <ClCompile Include="希尔排序算法.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="归并排序算法.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Utils.h">
