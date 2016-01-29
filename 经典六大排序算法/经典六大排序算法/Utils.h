@@ -1,6 +1,8 @@
 #ifndef _UTILS_H_
 #define _UTILS_H_
 #include <iostream>
+#define  INTARRAY_LENGTH(array) (sizeof(array)/sizeof(array[0]))
+
 using namespace std;
 static void coutArray(int *array, int length)
 {
