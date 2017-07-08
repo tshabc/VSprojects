@@ -60,10 +60,58 @@ void mergeSort(int *array, int *dec, int low, int hight, int max)
 			free(space);
 		}
 	}
+}
+//再次学习
+//算法思想：将原数列按快速排序思想做成两个有序数列 最后合并
+void mergeSort01(int * array,int * dec,int low,int hight,int max)
+{
+	if (NULL == array)
+	{
+		cout << "error" << endl;
+		abort();
+	}
+	/*
+	//快排 寻找中间下标 核心 
+	int temp = array[low];
+	while (low<hight)
+	{
+		while (low<hight && array[hight]>=temp)//因为 temp  = array【low】 所以从hight 开始比较好,右边>= 枢轴的都不用操作，只需要把hight 指针左移继续找
+		{
+			hight--;
+		}
+		int t = array[low];
+		array[low] = array[hight];
+		array[hight] = t;
+		while (low<hight && array[low]<=temp)
+		{
+			low++;
+		}
+		int t = array[low];
+		array[low] = array[hight];
+		array[hight] = t;
+
+	}
+	return low;
+	*/
+	if (low=hight)
+	{
+		dec[low] = array[low];
+	}
+	else
+	{
+		int mid = (low + hight)/2;
+		int * space = (int*)malloc(sizeof(int)*max);
+		mergeSort01(array, space, low, mid, max);
+		mergeSort01(array, space, mid + 1, hight, max);
+		mergeAction(space, dec, low, mid, hight);
+		if (space != NULL)
+		{
+			free(space);
+		}
+	}
+
 
 }
-
-
 int main(int args, char*argus[])
 {
 

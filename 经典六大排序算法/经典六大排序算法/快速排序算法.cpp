@@ -55,13 +55,57 @@ void quckSort(int * array, int low, int hight)
 	}
 }
 
-
-
-int main04(int args,char*argus[])
+//‘Ÿ–¥“ª±È
+int getcenterNumber(int *array,int low,int hight)
 {
-	int array[] = { 32, 6, 1, 5, 87, 6, 96, 54, 3, 5, 45, 6 };
+	if (NULL == array)
+	{
+		cout << __FUNCTION__ << __FILE__ << __LINE__ << endl;
+		abort();
+	}
+	int  number = array[low];
+	while (low<hight)
+	{
+		while (low<hight&&array[hight]>=number)
+		{
+			hight--;
+		}
+		int temp = 0;
+		temp = array[low];
+		array[low] = array[hight];
+		array[hight] = temp;
+		while (low<hight && array[low] <=number)
+		{
+			low++;
+		}
+		temp = array[hight];
+		array[hight] = array[low];
+		array[low] = temp;
+	}
+	return low;
+}
+void quckSort01(int * array, int low, int hight)
+{
+	if (NULL == array)
+	{
+		cout << __FUNCTION__ << __FILE__ << __LINE__ << endl;
+		return;
+	}
+	int center = 0;
+	if (low<hight)
+	{
+		center = getcenterNumber(array, low, hight);
+		quckSort01(array, low, center - 1);
+		quckSort01(array, center + 1, hight);
+	}
+}
+
+int main03(int args,char*argus[])
+{
+	int array[] = { 32, 15, 1, 5, 87, 10, 96, 54, 3, 8, 45, 6 };
 	int length = sizeof(array) / sizeof(array[0]);
-	quckSort(array, 0, 11);
+	//quckSort(array, 0, 11);
+	quckSort01(array, 0, length - 1);
 	coutArray(array, length);
 
 	cout<<"Hello World"<<endl;

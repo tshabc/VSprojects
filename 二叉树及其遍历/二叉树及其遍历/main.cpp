@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-
+#include <stack>
 using namespace std;
 
 
@@ -76,6 +76,62 @@ TreeNode * treeCopy(TreeNode * tree)
 	return node;
 }
 
+//不用递归进行树的遍历
+// 向左找叶子，直到没有，过程中将根放到栈中
+stack<TreeNode*> treeStack;
+TreeNode* findLeftC(TreeNode* node) //此函数一直往左找，并把经过的结点放入栈中
+{
+	TreeNode* t = NULL;
+	if (NULL == node)
+	{
+		return NULL;
+	}
+	t = node;
+	while (NULL !=t)
+	{
+		if (t->leftChild !=NULL)
+		{
+			treeStack.push(t);
+			t = t->leftChild;
+		}
+		else
+		{
+			break;
+		}
+		
+	}
+	return t;
+}
+//跟结点在中间遍历
+void bianli(TreeNode* node)
+{
+	if (NULL == node)
+	{
+		return;
+	}
+	TreeNode* t = findLeftC(node);
+	while (t)
+	{
+		printf("%d", t->data); //打印左孩子
+		if (t->rightChild != NULL)
+		{
+			t = findLeftC(t->rightChild);
+		}
+		else if (!treeStack.empty())
+		{
+			t = treeStack.top();
+			treeStack.pop();
+		}
+		else 
+		{
+			t = NULL;
+		}
+		
+
+	}
+	cout << endl;
+}
+
 int main(int args,char*argus[])
 {
 	TreeNode t1, t2, t3, t4, t5;
@@ -112,8 +168,10 @@ int main(int args,char*argus[])
 	TreeNode * copytree = NULL;
 	copytree = treeCopy(&t1);
 	cout << "复制结果" << endl;
-	readTree(&t1);
+	readTree(copytree);
 
+	cout << "非递归遍历结果如下" << endl;
+	bianli(&t1);
 
 	cout << "Hello World" << endl;
 	system("pause");

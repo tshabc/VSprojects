@@ -5,7 +5,7 @@
 #include <string.h>
 
 using namespace std;
-// 斐波那奇数列
+// 斐波那奇数列 
 
 int pheponatch(int  num)
 {
@@ -34,19 +34,38 @@ int pheponatch(int  num)
 
 	return goal;
 }
-
-
-int main(int args,char*argus[])
+//复习
+void pheponatch01(int m)
+{
+	int i = 1, j= 1;
+	int k = i + j;
+	cout << i << endl << j << endl;
+	while (1)
+	{
+		k = i + j;
+		i = j;
+		j = k;
+		if (k>m)
+		{
+			break;
+		}
+		cout /*<< i << j*/ << k << endl;
+	}
+}
+int main02(int args,char*argus[])
 {
 	int i = 0;
 	for (i = 1; i <= 10; i++)
 	{
-		cout << pheponatch(i) << endl;
+	//	cout << pheponatch(i) << endl;
 	}
 	int *a[10];
 	int b = 1;
-	int  *const a = &b;
+	int  *const aa = &b;
+
+	pheponatch01(13);
 	cout<<"Hello World"<<endl;
+
 	system("pause");
 	return 0;
 }

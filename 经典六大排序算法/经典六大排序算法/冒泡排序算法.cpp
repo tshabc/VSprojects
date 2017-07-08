@@ -31,7 +31,7 @@ void maoPaoSort(int *array, int length)
 
 }
 
-int main03(int args,char*argus[])
+int main04(int args,char*argus[])
 {
 	int array[] = { 32, 6, 1, 5, 87, 6, 96, 54, 3, 5, 45, 6 };
 	int length = sizeof(array) / sizeof(array[0]);

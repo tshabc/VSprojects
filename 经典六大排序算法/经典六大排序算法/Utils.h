@@ -12,8 +12,10 @@ static void coutArray(int *array, int length)
 	}
 	for (int i = 0; i < length; i++)
 	{
-		std::cout << "array[i] = " << array[i] << std::endl;
+		//std::cout << "array[i] = " << array[i] << std::endl;
+		printf("array[%d] = %d \n",i,array[i]);
 	}
+	std::cout << std::endl;
 }
 /* 
 	交换数组中的两个数

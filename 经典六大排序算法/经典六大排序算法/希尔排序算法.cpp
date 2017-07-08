@@ -39,21 +39,51 @@ void xierSort(int *array, int length)
 	} while (group > 1);
 
 }
+//再写一遍 希尔排序是 算出下标间隔 ,把间隔两头的元素两两进行排序交换
+//
+void xierSort01(int * array,int length)
+{
+	if (NULL == array)
+	{
+		cout << __FUNCTION__ << __FILE__ << __LINE__ << endl;
+		abort();
+	}
+	int jiange = length;
+	int i = 0,j = 0;
+	do
+	{
+		jiange = jiange / 3 + 1;
+		for (i = jiange; i < length; i = i+ jiange)
+		{
+			int temp = array[i];
+			for (j = i - jiange; j >= 0 && array[j] > temp;j = j-jiange)
+			{
+				array[j + jiange] = array[j];				
+			}
+			array[j+jiange] = temp;
+			coutArray(array, 12);
+		}
+		
+	} while (jiange > 1);
 
+}
 int main05(int args,char*argus[])
 {
 
-	int array[] = { 32, 6, 1, 5, 87, 6, 96, 54, 3, 5, 45, 6 };
+	int array[] = { 32, 15, 1, 5, 87, 10, 96, 54, 3, 8, 45, 6 };
 	int length = sizeof(array) / sizeof(array[0]);
 
-	xierSort(array, length);
+	//xierSort(array, length);
+	xierSort01(array, length);
 	coutArray(array, length);
 	{
-		double d[] = { 4, 8 },*p,*q;
+		double d[] = { 4, 8 },*p,*q,*u;
+		u = d;
 		p = &d[0];
 		q = p + 1;
 		cout << q - p << endl;
 		cout << (int)q - (int)p << endl;
+		cout << (int)q - (int)d << endl;
 	}
 
 	cout<<"Hello World"<<endl;
