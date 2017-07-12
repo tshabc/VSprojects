@@ -89,10 +89,10 @@ void testBuchang()
 void testStrlen()
 {
 	char aa[10] ;
-	cout << strlen(aa) << endl;
-	cout << sizeof(aa) << endl;
+	cout << strlen(aa) << endl;// 你不初始化里面可能有繁杂的数据，谁知道这块内存里是啥
+	cout << sizeof(aa) << endl;//这个是测内存块是有多少字节的
 }
-int main11(int args,char*argus[])
+int main(int args,char*argus[])
 {
 	CPUcalc();
 
