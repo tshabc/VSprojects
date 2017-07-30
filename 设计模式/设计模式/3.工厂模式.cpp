@@ -4,6 +4,9 @@
 #include <stdio.h>
 #include <string.h>
 using namespace std;
+// 简单工厂只设计了一个 产品基类
+// 真正的工厂模式应该设计一个 工厂基类 加一个产品基类  后来人增加一个产品的时候要加 两个类
+// 一个是生产 产品的工厂继承基类工厂，另一个是 产品类继承产品基类
 enum ENUME_Fruits
 {
 	ENUM_banana,
@@ -59,24 +62,23 @@ void banana::eat()
 {
 	cout << "把香蕉吃了" << endl;
 }
-class factory
+class factoryObj
 {
 public:
-	factory();
-	~factory();
-	fruitObj* creatFruit(ENUME_Fruits f);
+	virtual fruitObj* createProduct() = 0;
 private:
 
 };
-
-factory::factory()
+class factoryBanana: public factoryObj
 {
-}
+public:
+	//fruitObj* creatFruit(ENUME_Fruits f);// 简单工厂用这种模式 传参数 ，思想是一个工厂生产多种水果，代码高内聚
+	virtual fruitObj* createProduct();		//真正工厂是这种模式，无参，只生产一种水果，代码解耦合 
+private:
 
-factory::~factory()
-{
-}
-fruitObj* factory::creatFruit(ENUME_Fruits f)
+};
+/* // 简单工厂用这种模式
+fruitObj* factoryBanana::creatFruit(ENUME_Fruits f)
 {
 	fruitObj * fruit = NULL;
 	switch (f)
@@ -90,23 +92,32 @@ fruitObj* factory::creatFruit(ENUME_Fruits f)
 		break;
 	}
 
+}*/
+// 真正工厂如下 每一个工厂只生产一种 产品，多种产品要定义多种工厂
+fruitObj* factoryBanana::createProduct()
+{
+	return new banana;
 }
 int main(int args,char*argus[])
 {
+/*
 	factory* fa = new factory;
 	fruitObj* fruit = NULL;
 	fruit = fa->creatFruit(ENUM_banana);
 	fruit->giveName();
-	fruit->eat();
+	fruit->eat();*/
+	factoryObj* fa = new factoryBanana; //多态
+	fruitObj * banana = fa->createProduct();//多态
+	banana->giveName();
 	if (fa)
 	{
 		delete fa;
 		fa = NULL;
 	}
-	if (fruit)
+	if (banana)
 	{
-		delete fruit;
-		fruit = NULL;
+		delete banana;
+		banana = NULL;
 	}
 	cout<<"Hello World"<<endl;
 	system("pause");
