@@ -98,7 +98,7 @@ fruitObj* factoryBanana::createProduct()
 {
 	return new banana;
 }
-int main(int args,char*argus[])
+int main03(int args,char*argus[])
 {
 /*
 	factory* fa = new factory;
