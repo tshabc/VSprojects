@@ -5,6 +5,15 @@
 #include <string.h>
 
 using namespace std;
+/*
+	建造者模式 思想是将一个产品分成多个部分 
+	由一个设计师指挥 一支施工队进行建造
+	施工队可以有多种 每个施工队都能建造自己擅长风格的产品 （所以这里要有一个施工队的基类）
+	设计师里面有一个基类的指针  给设计师一个不同的队伍，设计师就能指挥他们建造不同的建筑
+	施工队建造完成 后给返回一个产品
+
+*/
+
 class House
 {
 public:
@@ -179,7 +188,7 @@ Designer::~Designer()
 {
 	
 }
-int main(int args,char*argus[])
+int main04(int args,char*argus[])
 {
 	Designer* ds = NULL;
 	House*   bu = NULL;
