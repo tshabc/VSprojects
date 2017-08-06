@@ -82,7 +82,7 @@ private:
 	char  *computer;
 };
 
-int main(int args,char*argus[])
+int main05(int args,char*argus[])
 {
 	char * computer = (char *)malloc(256);
 	

@@ -87,6 +87,7 @@
     <ClCompile Include="3.工厂模式.cpp" />
     <ClCompile Include="4.建造者模式.cpp" />
     <ClCompile Include="5.原型模式.cpp" />
+    <ClCompile Include="6.装饰模式.cpp" />
     <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="2.代理模式.cpp" />
   </ItemGroup>

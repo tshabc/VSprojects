@@ -10,22 +10,12 @@
 
 using namespace std;
 
-/*
-int main(int args,char*argus[])
-{
-
-
-	cout<<"Hello World"<<endl;
-	system("pause");
-	return 0;
-}*/
 class Subject
 {
 public:
 	virtual void sailbook() = 0;
-
-
 };
+
 class realSubject:public Subject
 {
 public:
@@ -33,9 +23,8 @@ public:
 	{
 		cout << "ÂôÊé" << endl;
 	}
-
-
 };
+
 class dangdang:public Subject
 {
 public:

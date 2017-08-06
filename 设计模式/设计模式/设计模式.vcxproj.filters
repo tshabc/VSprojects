@@ -44,5 +44,8 @@
     <ClCompile Include="5.原型模式.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="6.装饰模式.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
