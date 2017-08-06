@@ -179,46 +179,6 @@ Designer::~Designer()
 {
 	
 }
-class Buid
-{
-public:
-	Buid();
-	~Buid(); 
-	void makeBuid()
-	{
-		buidDoor(m_house);
-		buidFloor(m_house);
-		buidWindow(m_house);
-	}
-	void buidDoor(House* h)
-	{
-		cout << "make door" << endl;
-	}
-	void buidFloor(House* h)
-	{
-		cout << "make floor" << endl;
-	}
-	void buidWindow(House* h)
-	{
-		cout << "make window" << endl;
-	}
-private:
-	House* m_house;
-};
-
-Buid::Buid()
-{
-	m_house = new House;
-}
-
-Buid::~Buid()
-{
-	if (m_house)
-	{
-		delete m_house;
-		m_house = NULL;
-	}
-}
 int main(int args,char*argus[])
 {
 	Designer* ds = NULL;
