@@ -66,7 +66,7 @@ Adeptor::~Adeptor()
 
 
 
-int main(int args, char*argus[])
+int main07(int args, char*argus[])
 {
 	_220Vpower * _220v = NULL;
 	Adeptor*	 _adp = NULL;
