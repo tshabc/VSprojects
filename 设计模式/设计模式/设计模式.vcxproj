@@ -81,6 +81,7 @@
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="util_tools.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1.单例模式.cpp" />
@@ -88,6 +89,7 @@
     <ClCompile Include="4.建造者模式.cpp" />
     <ClCompile Include="5.原型模式.cpp" />
     <ClCompile Include="6.装饰模式.cpp" />
+    <ClCompile Include="7.适配器模式.cpp" />
     <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="2.代理模式.cpp" />
   </ItemGroup>

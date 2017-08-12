@@ -88,7 +88,7 @@ flycar::flycar(car * c)
 flycar::~flycar()
 {
 }
-int main(int args,char*argus[])
+int main06(int args,char*argus[])
 {
 	car* ca = NULL;
 	ca = new runcar;
