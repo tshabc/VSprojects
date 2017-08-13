@@ -52,6 +52,7 @@ public:
 		{
 			SAFE_DEL(it->second);
 		}
+		teacherList.clear();
 	}
 
 
@@ -90,7 +91,7 @@ protected:
 private:
 	std::map<int, Teacher*> teacherList;
 };
-int main(int args,char*argus[])
+int main11(int args,char*argus[])
 {
 	teacherFactory * tf = new teacherFactory;
 	Person* t1 = NULL;
