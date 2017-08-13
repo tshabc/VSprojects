@@ -168,8 +168,6 @@ void test03()
 	hn->submitCaseList();
 
 	SAFE_DEL(hn);
-	SAFE_DEL(cm2);
-	SAFE_DEL(cm1);
 	SAFE_DEL(mdoc);
 
 }
