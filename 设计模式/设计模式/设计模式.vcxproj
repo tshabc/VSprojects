@@ -85,6 +85,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1.单例模式.cpp" />
+    <ClCompile Include="10.外观模式.cpp" />
+    <ClCompile Include="11.享元模式.cpp" />
     <ClCompile Include="3.工厂模式.cpp" />
     <ClCompile Include="4.建造者模式.cpp" />
     <ClCompile Include="5.原型模式.cpp" />

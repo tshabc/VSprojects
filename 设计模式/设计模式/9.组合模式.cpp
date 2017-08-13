@@ -80,7 +80,7 @@ private:
 	std::list<BFILE*> m_fileList;
 };
 
-int main(int args,char*argus[])
+int main09(int args,char*argus[])
 {
 	//定义 一个新文件
 	string stname = "test.txt";
