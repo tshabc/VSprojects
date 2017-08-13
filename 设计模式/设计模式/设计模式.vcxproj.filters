@@ -56,5 +56,8 @@
     <ClCompile Include="8.桥接模式.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="9.组合模式.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

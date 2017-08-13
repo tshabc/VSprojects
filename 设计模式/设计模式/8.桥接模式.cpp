@@ -96,7 +96,7 @@ protected:
 private:
 };
 
-int main(int args,char*argus[])
+int main08(int args,char*argus[])
 {
 	baseengine* eng2000 = new engine2000;
 	basecar * bmw = new carbmw(eng2000);

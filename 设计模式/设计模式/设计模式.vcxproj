@@ -91,6 +91,7 @@
     <ClCompile Include="6.装饰模式.cpp" />
     <ClCompile Include="7.适配器模式.cpp" />
     <ClCompile Include="8.桥接模式.cpp" />
+    <ClCompile Include="9.组合模式.cpp" />
     <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="2.代理模式.cpp" />
   </ItemGroup>
