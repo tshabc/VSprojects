@@ -66,6 +66,7 @@ public:
 			cout << "字节数 = " << sizeof(this->computer) << endl;;
 			cout << "字节数strlen = " << (strlen(computer)+1) << endl;;
 			cp->computer = (char*)malloc(strlen(computer) + 1);
+			strcpy(cp->computer, this->computer);
 		}
 		return cp;
 	}
