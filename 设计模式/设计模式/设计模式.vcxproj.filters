@@ -83,5 +83,11 @@
     <ClCompile Include="17.观察者模式.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="18.备忘录模式.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="19.访问者模式.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

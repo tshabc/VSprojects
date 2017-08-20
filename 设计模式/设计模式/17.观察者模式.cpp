@@ -106,7 +106,7 @@ private:
 };
 
 
-int main(int args, char*argus[])
+int main17(int args, char*argus[])
 {
 	BaseNotify * ntify = new notifiyer;
 	BaseObsever* bob   = new createObserver;
