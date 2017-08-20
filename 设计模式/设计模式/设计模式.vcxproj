@@ -89,6 +89,10 @@
     <ClCompile Include="11.享元模式.cpp" />
     <ClCompile Include="12.模板模式.cpp" />
     <ClCompile Include="13.命令模式.cpp" />
+    <ClCompile Include="14.责任链模式.cpp" />
+    <ClCompile Include="15.策略模式.cpp" />
+    <ClCompile Include="16.中介者模式.cpp" />
+    <ClCompile Include="17.观察者模式.cpp" />
     <ClCompile Include="3.工厂模式.cpp" />
     <ClCompile Include="4.建造者模式.cpp" />
     <ClCompile Include="5.原型模式.cpp" />

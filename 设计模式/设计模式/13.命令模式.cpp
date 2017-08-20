@@ -171,7 +171,7 @@ void test03()
 	SAFE_DEL(mdoc);
 
 }
-int main(int args,char*argus[])
+int main13(int args,char*argus[])
 {
 // 	test01();
 // 	test02();
