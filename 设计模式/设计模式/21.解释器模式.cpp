@@ -88,6 +88,10 @@ int main(int args,char*argus[])
 	m_exp->interpretor(m_con);
 	cout << m_con->getNum() << endl;
 
+	SAFE_DEL(m_exp);
+	SAFE_DEL(m_con);
+
+
 	cout<<"Hello World"<<endl;
 	system("pause");
 	return 0;
