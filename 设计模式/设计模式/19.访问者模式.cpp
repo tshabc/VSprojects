@@ -173,11 +173,11 @@ public:
 	string m_partName;
 };
 
-int main(int args,char*argus[])
+int main19(int args,char*argus[])
 {
 	baseVisitor* visit = new cleaner(Enum_visit_cleaner);
 	BasePark * bp = new newParkA("公园A区");
-	bp->accept(visit);
+	bp->accept(visit); 
 
 	/************************************************************************/
 	/* 分割线                                                               */

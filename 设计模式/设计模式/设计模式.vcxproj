@@ -95,6 +95,7 @@
     <ClCompile Include="17.观察者模式.cpp" />
     <ClCompile Include="18.备忘录模式.cpp" />
     <ClCompile Include="19.访问者模式.cpp" />
+    <ClCompile Include="20.状态模式.cpp" />
     <ClCompile Include="3.工厂模式.cpp" />
     <ClCompile Include="4.建造者模式.cpp" />
     <ClCompile Include="5.原型模式.cpp" />
