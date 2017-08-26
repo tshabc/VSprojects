@@ -183,7 +183,7 @@ worker::~worker()
 {
 	SAFE_DEL(state);
 }
-int main(int args,char*argus[])
+int main20(int args,char*argus[])
 {
 	worker * m_work = new worker;
 	m_work->setCurEnum(Enum_senh);
