@@ -76,7 +76,7 @@ private:
 };
 
 
-int main(int args,char*argus[])
+int main21(int args,char*argus[])
 {
 	context*	m_con = NULL;
 	expression* m_exp = NULL;
