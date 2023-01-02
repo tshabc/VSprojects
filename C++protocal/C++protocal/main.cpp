@@ -7,7 +7,7 @@
 #include "factory01.h"
 
 using namespace std;
-
+//一个收发报文逻辑模拟
 int main(int args,char*argus[])
 {
 	unsigned char buff[1024] = { 0 };
